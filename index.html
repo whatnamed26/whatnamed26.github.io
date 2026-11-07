@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whatnamed Monitor</title>
+<meta name="description" content="Whatnamed Monitor is a private tool that shows the Whatnamed YouTube channel's owner how the channel's videos perform.">
+<style>
+  :root { --ink: #111111; --paper: #FFF6E5; --mustard: #FFC93C; --tomato: #B8301F; --line: #11111126; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #FFF6E5; --paper: #161412; --tomato: #FF8A75; --line: #FFF6E526; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { margin: 0 0 8px; font-size: clamp(32px, 7vw, 44px); line-height: 1.1; }
+  h1 mark { background: var(--mustard); color: #111111; padding: 0 8px; display: inline-block; transform: rotate(-2deg); }
+  h2 { margin: 48px 0 8px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 24px; line-height: 1.25; }
+  h3 { margin: 24px 0 4px; font-size: 18px; }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--tomato); }
+  nav { margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 16px; }
+  .lead { font-size: 19px; }
+  .date { font-size: 15px; opacity: .75; }
+  code { font-size: .9em; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Whatnamed <mark>Monitor</mark></h1>
+  <p class="lead">A private tool that shows the owner of the Whatnamed YouTube channel how the channel's videos are performing.</p>
+  <nav aria-label="Page sections">
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy policy</a>
+    <a href="#terms">Terms of service</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <h2 id="about">About</h2>
+  <p>Whatnamed is a channel about the origins of everyday words. Whatnamed Monitor runs on the channel owner's own computer. It reads the channel's analytics and turns them into private reports about views, watch time, audience, and channel growth.</p>
+  <p>It is not a public service. Only the channel owner uses it, and it cannot upload, edit, or delete anything on YouTube.</p>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p class="date">Effective 8 November 2026</p>
+
+  <h3>Data the app accesses</h3>
+  <p>With the channel owner's permission, the app requests these read-only Google permissions:</p>
+  <ul>
+    <li><strong>YouTube account data</strong> (<code>youtube.readonly</code>): channel details and the list of public videos.</li>
+    <li><strong>YouTube Analytics</strong> (<code>yt-analytics.readonly</code>): figures such as views, watch time, and grouped audience statistics.</li>
+    <li><strong>YouTube Analytics revenue</strong> (<code>yt-analytics-monetary.readonly</code>): the channel's own revenue figures, if any.</li>
+  </ul>
+
+  <h3>How the data is used</h3>
+  <p>The data is used only to produce performance reports for the channel owner. The app does not use it for advertising and does not train AI models with it.</p>
+
+  <h3>Storage and sharing</h3>
+  <p>The data and the login token are stored on the channel owner's computer. The app has no server of its own, and it sends requests only to Google's services in order to sign in and fetch the data. It does not sell Google user data.</p>
+  <p>The channel owner may choose to review their own reports with an AI assistant, currently Claude by Anthropic. When they do, the report content they review is sent to that assistant under its own terms. The login token is not shared this way.</p>
+
+  <h3>Google API Services</h3>
+  <p>The app's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. It also uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>, so the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> apply.</p>
+
+  <h3>Keeping and removing data</h3>
+  <p>Data stays on the owner's computer until the owner deletes it. Access can be removed at any time from <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>.</p>
+
+  <h3>Changes</h3>
+  <p>Any change to this policy will be posted on this page with a new effective date.</p>
+
+  <h2 id="terms">Terms of service</h2>
+  <p class="date">Effective 8 November 2026</p>
+  <p>Whatnamed Monitor is a personal tool for the Whatnamed channel owner and is not offered to the public. Anyone else who reaches its sign-in screen should not use it.</p>
+  <p>The app is provided as is, with no guarantee that its figures are complete or accurate. YouTube Studio remains the official source for channel figures.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions about this page: <a href="mailto:whatnamed26@gmail.com">whatnamed26@gmail.com</a></p>
+</main>
+</body>
+</html>
